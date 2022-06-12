@@ -160,10 +160,10 @@ function Nav() {
                 </nav>
               </div>
               <div className="bg-img">
-                <div className="mint-11">
+                {/* <div className="mint-11">
                     <button>Mint</button>
                     <h4>(0/10000)</h4>
-                </div>
+                </div> */}
                 <div className="upper_image">
                   <img
                     src="assets\images\down.svg"
