@@ -88,6 +88,16 @@ function Nav() {
                           <h6>DOCS</h6>
                         </a>
                       </li>
+                      <li>
+                        <a
+                          href=""
+                          className="gg"
+                          data-toggle="modal" data-target="#claim"
+                        >
+                          <img src="\assets\claim.png" class="img-fluid icon claim-icon" alt="" />
+                          <h6>Claim</h6>
+                        </a>
+                      </li>
                     </ul>
                     <div className="sidebar-footer">
                       <div class="list-unstyled CTAs">
@@ -180,46 +190,49 @@ function Nav() {
               <div className="bg-img">
                 <div className="row m-0">
                   <div className="col-xl-8 col-12 m-auto">
-                  <div className="mint-11">
-                  <nervous-minter>
-                    contract-address="0x0b471580741c3360Ed14C7cf084C739efC7d5204"
-                    quantity-options="1,2,3,4,5,6,7,8,9,10" network="1"
-                  </nervous-minter>
-                  <h4 className="heading-main">Abstract Diaspora Club Overview </h4>
-                  <p className="para-main">
-                    As our first NFT collection,
-                    we will focus on honoring one of the most prominent and
-                    highest selling, post-mortem, Black painters and artists of
-                    all time, Jean Michael-Basquiat, in collaboration with
-                    Animation artist, and musician HighWestHus. <br /> These generative
-                    pieces will include elements inspired by his signature style
-                    of abstract expressionism, while also including attributes
-                    representing diversity and inclusion. Effectively giving our
-                    platform an aesthetic identity outside of our economic
-                    structure and mission, while also providing initial
-                    liquidity to treasury and LPs. <br />
-                    Mint Price: 0.05 ETH
-                    <br />
-                    Editions: 10,000
-                    <br />
-                    Attributes: 200+ 
-                    <br />
-                    No Roadmap 
-                    <br />
-                    No Whitelists No Private Sale 
-                    <br />
-                    No Discord Grinding 
-                    <br />
-                    Similar to popular art
-                    generating reserve currency projects, such as Squid DAO and
-                    NOUNS, this collection aims to bring a stream of revenue to
-                    our DAO’s treasury, and support our commitment to funding
-                    Black and African creatives. In addition, these tokens will
-                    act as a non-inflationary tool and an effective alternative
-                    to excessive rebasing tokenomics. 
-                    <br />
-                  </p>
-                </div>
+                    <div className="mint-11">
+                      <nervous-minter>
+                        contract-address="0x0b471580741c3360Ed14C7cf084C739efC7d5204"
+                        quantity-options="1,2,3,4,5,6,7,8,9,10" network="1"
+                      </nervous-minter>
+                      <h4 className="heading-main">
+                        Abstract Diaspora Club Overview{" "}
+                      </h4>
+                      <p className="para-main">
+                        As our first NFT collection, we will focus on honoring
+                        one of the most prominent and highest selling,
+                        post-mortem, Black painters and artists of all time,
+                        Jean Michael-Basquiat, in collaboration with Animation
+                        artist, and musician HighWestHus. <br /> These
+                        generative pieces will include elements inspired by his
+                        signature style of abstract expressionism, while also
+                        including attributes representing diversity and
+                        inclusion. Effectively giving our platform an aesthetic
+                        identity outside of our economic structure and mission,
+                        while also providing initial liquidity to treasury and
+                        LPs. <br />
+                        Mint Price: 0.05 ETH
+                        <br />
+                        Editions: 10,000
+                        <br />
+                        Attributes: 200+
+                        <br />
+                        No Roadmap
+                        <br />
+                        No Whitelists No Private Sale
+                        <br />
+                        No Discord Grinding
+                        <br />
+                        Similar to popular art generating reserve currency
+                        projects, such as Squid DAO and NOUNS, this collection
+                        aims to bring a stream of revenue to our DAO’s treasury,
+                        and support our commitment to funding Black and African
+                        creatives. In addition, these tokens will act as a
+                        non-inflationary tool and an effective alternative to
+                        excessive rebasing tokenomics.
+                        <br />
+                      </p>
+                    </div>
                   </div>
                 </div>
                 <div className="upper_image">
@@ -246,6 +259,26 @@ function Nav() {
                     alt="img"
                   />
                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="modal-claim">
+        <div
+          class="modal fade"
+          id="claim"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-body">
+                  <h5>You are eligible to claim the tokens</h5>
+                  <button className="claim">
+                  Claim Now
+                  </button>
               </div>
             </div>
           </div>

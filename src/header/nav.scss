@@ -412,3 +412,38 @@
 aside.svelte-rntogh{
   z-index: 999999999 !important;
 }
+
+.modal-claim{
+  position: absolute;
+  z-index: 9999999;
+  .modal-content{
+    background: #1C1C1C !important;
+    border: 1px solid #493B17;
+    border-radius: 15px;
+  }
+  h5{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    color: #FFFFFF !important;
+    margin: 50px 0;
+  }
+  .claim{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 135%;
+    color: #000000;
+    padding: 15px 65px;
+    background: #FFB805;
+    border-radius: 10px;
+    margin-bottom: 50px;
+  }
+}
+
+.claim-icon{
+  width: 20px;
+  height: 18px;
+}
