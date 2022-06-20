@@ -21,16 +21,10 @@ function Nav() {
   console.log("we have", stickyClass);
   return (
     <>
-      <div className="widget">
-        <nervous-minter>
-          contract-address="0x0b471580741c3360Ed14C7cf084C739efC7d5204"
-          quantity-options="1,2,3,4,5,6,7,8,9,10" network="1"
-        </nervous-minter>
-      </div>
       <section className="section-1">
         <div className="button_toggle">
           <button type="button" onClick={opennav}>
-          <i class="fas fa-bars"></i>
+            <i class="fas fa-bars"></i>
           </button>
         </div>
         <div className="container-fluid">
@@ -53,7 +47,11 @@ function Nav() {
                     </div>
                     <ul class="list-unstyled components">
                       <li>
-                        <a href="http://www.blk.finance/" target="_blank" className="gg">
+                        <a
+                          href="http://www.blk.finance/"
+                          target="_blank"
+                          className="gg"
+                        >
                           <img
                             src="\assets\vuesax\bold\vuesax\bold\home-2.svg"
                             class="img-fluid icon"
@@ -63,7 +61,11 @@ function Nav() {
                         </a>
                       </li>
                       <li>
-                        <a href="https://tell.ie/theblackdao/lYZQQAX3KwSM" target="_blank" className="gg">
+                        <a
+                          href="https://tell.ie/theblackdao/lYZQQAX3KwSM"
+                          target="_blank"
+                          className="gg"
+                        >
                           <img
                             src="\assets\vuesax\bold\vuesax\bold\profile-2user.svg"
                             class="img-fluid icon"
@@ -73,7 +75,11 @@ function Nav() {
                         </a>
                       </li>
                       <li>
-                        <a href="http://docs.blk.finance/" target="_blank" className="gg">
+                        <a
+                          href="http://docs.blk.finance/"
+                          target="_blank"
+                          className="gg"
+                        >
                           <img
                             src="\assets\vuesax\bold\vuesax\bold\document-text.svg"
                             class="img-fluid icon"
@@ -85,28 +91,40 @@ function Nav() {
                     </ul>
                     <div className="sidebar-footer">
                       <div class="list-unstyled CTAs">
-                        <a href="https://discord.com/invite/N9JHyZjqK9" target="_blank">
+                        <a
+                          href="https://discord.com/invite/N9JHyZjqK9"
+                          target="_blank"
+                        >
                           <img
                             src="\assets\Vector.svg"
                             class="img-fluid links1"
                             alt=""
                           />
                         </a>
-                        <a href="https://twitter.com/theblackdao" target="_blank">
+                        <a
+                          href="https://twitter.com/theblackdao"
+                          target="_blank"
+                        >
                           <img
                             src="\assets\Vector (1).svg"
                             class="img-fluid links1"
                             alt=""
                           />
                         </a>
-                        <a href="https://mirror.xyz/theblackdao.eth" target="_blank">
+                        <a
+                          href="https://mirror.xyz/theblackdao.eth"
+                          target="_blank"
+                        >
                           <img
                             src="\assets\Shape.svg"
                             class="img-fluid links1"
                             alt=""
                           />
                         </a>
-                        <a href="https://github.com/The-Black-DAO" target="_blank">
+                        <a
+                          href="https://github.com/The-Black-DAO"
+                          target="_blank"
+                        >
                           <img
                             src="\assets\Cat.svg"
                             class="img-fluid links1"
@@ -160,10 +178,50 @@ function Nav() {
                 </nav>
               </div>
               <div className="bg-img">
-                {/* <div className="mint-11">
-                    <button>Mint</button>
-                    <h4>(0/10000)</h4>
-                </div> */}
+                <div className="row m-0">
+                  <div className="col-xl-8 col-12 m-auto">
+                  <div className="mint-11">
+                  <nervous-minter>
+                    contract-address="0x0b471580741c3360Ed14C7cf084C739efC7d5204"
+                    quantity-options="1,2,3,4,5,6,7,8,9,10" network="1"
+                  </nervous-minter>
+                  <h4 className="heading-main">Abstract Diaspora Club Overview </h4>
+                  <p className="para-main">
+                    As our first NFT collection,
+                    we will focus on honoring one of the most prominent and
+                    highest selling, post-mortem, Black painters and artists of
+                    all time, Jean Michael-Basquiat, in collaboration with
+                    Animation artist, and musician HighWestHus. <br /> These generative
+                    pieces will include elements inspired by his signature style
+                    of abstract expressionism, while also including attributes
+                    representing diversity and inclusion. Effectively giving our
+                    platform an aesthetic identity outside of our economic
+                    structure and mission, while also providing initial
+                    liquidity to treasury and LPs. <br />
+                    Mint Price: 0.05 ETH
+                    <br />
+                    Editions: 10,000
+                    <br />
+                    Attributes: 200+ 
+                    <br />
+                    No Roadmap 
+                    <br />
+                    No Whitelists No Private Sale 
+                    <br />
+                    No Discord Grinding 
+                    <br />
+                    Similar to popular art
+                    generating reserve currency projects, such as Squid DAO and
+                    NOUNS, this collection aims to bring a stream of revenue to
+                    our DAO’s treasury, and support our commitment to funding
+                    Black and African creatives. In addition, these tokens will
+                    act as a non-inflationary tool and an effective alternative
+                    to excessive rebasing tokenomics. 
+                    <br />
+                  </p>
+                </div>
+                  </div>
+                </div>
                 <div className="upper_image">
                   <img
                     src="assets\images\down.svg"
