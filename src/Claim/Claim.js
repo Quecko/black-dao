@@ -1,8 +1,37 @@
 import React from "react";
 import Sidebar from "../Sidebar/Sidebar";
 import "./claim.scss";
+import { useWeb3React } from "@web3-react/core";
+import useAuth from "../hooks/useAuth";
 
 const Claim = () => {
+  const { account } = useWeb3React();
+  const { login, logout } = useAuth();
+  const connectMetamask = () => {
+    localStorage.setItem("connectorId", "injected");
+    if (account) {
+      logout();
+    } else {
+      login("injected");
+    }
+  };
+
+  const close = () => {
+    window.$("#exampleModal").modal("hide");
+  };
+
+  const openn = () => {
+    window.$("#exampleModal").modal("show");
+  };
+
+  const trustWallet = async () => {
+    localStorage.setItem("connectorId", "walletconnect");
+    if (account) {
+      logout();
+    } else {
+      login("walletconnect");
+    }
+  };
   return (
     <>
       <video id="myVideo" autoPlay loop>
@@ -11,7 +40,7 @@ const Claim = () => {
       </video>
       <section className="claim">
       <button class="btn button-header" data-toggle="modal" data-target="#exampleModal" type="button">
-             Connect Wallet
+          {account?'Connected':' Connect Wallet'}  
              </button>
         <div className="container-fluid p-0">
           <Sidebar />
@@ -26,7 +55,7 @@ const Claim = () => {
         </div>
         <div className="wallet-modal">
           <div
-            class="modal fade modal-dialog-centered"
+            class="modal fade"
             id="exampleModal"
             tabindex="-1"
             role="dialog"
@@ -56,7 +85,10 @@ const Claim = () => {
                   </div>
 
                   <div className="button-modal1 d-flex">
-                    <button className="modal-button">
+                    <button  onClick={() => {
+                    connectMetamask();
+                    close();
+                  }} className="modal-button">
                       <img
                         src="\assets\metamask-icon.svg"
                         className="img-fluid"
@@ -64,7 +96,10 @@ const Claim = () => {
                       <h3 className=""> MetaMask</h3>
                       <p className="">Connect to your MetaMask wallet </p>
                     </button>
-                    <button className="modal-button">
+                    <button  onClick={() => {
+                    trustWallet();
+                    // close();
+                  }} className="modal-button">
                       <img
                         src="\assets\walletconnect-icon.svg"
                         className="img-fluid"
