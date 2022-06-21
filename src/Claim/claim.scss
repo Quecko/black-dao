@@ -1,0 +1,71 @@
+.claim{
+    .box{
+      background: #202226 !important;
+      border: 1px solid #493B17;
+      border-radius: 15px;
+      margin: 0 auto;
+      margin-left: 137px;
+      margin-top: 153px;
+      width: 800px;
+        h5{
+            font-style: normal;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 28px;
+            text-align: center;
+            color: #FFFFFF !important;
+            margin: 50px 0;
+          }
+          .claim{
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 135%;
+            color: #000000;
+            padding: 15px 65px;
+            background: #FFB805;
+            border-radius: 10px;
+            margin-bottom: 50px;
+            margin: 0 auto;
+            display: block;
+            margin-bottom: 40px;
+          }
+    }
+}
+#myVideo {
+    position: fixed;
+    right: -520px;
+    bottom: -100px;
+    min-width: 100%; 
+    min-height: 100%;
+  }
+  
+
+
+  @media (max-width:1199px){
+    .claim .box{
+      width: 600px;
+      margin-left: 313px;
+    }
+  }
+
+  @media (max-width:991px){
+    .claim .box{
+      width: 80%;
+      margin: 0 auto;
+      margin-top: 200PX;
+    }
+    #myVideo{
+      right: -660px;
+    }
+  }
+  @media (max-width:600px){
+    .claim .box{
+      width: 95%;
+      margin: 0 auto;
+      margin-top: 200PX;
+    }
+    #myVideo{
+      right: -850px;
+    }
+  }

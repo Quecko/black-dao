@@ -1,12 +1,15 @@
-import logo from './logo.svg';
 import './App.css';
-import Nav from './header/Nav';
+import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-dom';
+import Claim from './Claim/Claim';
 
 function App() {
   return (
-    <div className="App">
-      <Nav/>
-    </div>
+    <Router>
+    <Switch>
+      <Route exact path='/' > <Claim /></Route>
+    </Switch>
+  </Router>
+    
   );
 }
 

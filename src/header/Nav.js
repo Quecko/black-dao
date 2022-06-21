@@ -1,5 +1,6 @@
 import "./nav.scss";
 import React, { useState } from "react";
+import {Link} from "react-router-dom";
 import $ from "jquery";
 // import { NavLink, Link } from "react-router-dom";
 $(document).ready(function () {
@@ -46,6 +47,71 @@ function Nav() {
                       <p>0xEC70F2A...5AEE5</p>
                     </div>
                     <ul class="list-unstyled components">
+                    <li>
+                        <a
+                          href="https://app.blk.finance/#/dashboard"
+                          className="gg"
+                        >
+                          <img src="\assets\dashboard.png" class="img-fluid icon claim-icon" alt="" />
+                          <h6>Dashboard</h6>
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="https://app.blk.finance/#/bonds"
+                          className="gg"
+                        >
+                          <img src="\assets\bond.png" class="img-fluid icon claim-icon" alt="" />
+                          <h6>Bond</h6>
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="https://app.blk.finance/#/stake"
+                          className="gg"
+                        >
+                          <img src="\assets\stake.png" class="img-fluid icon claim-icon" alt="" />
+                          <h6>Stake</h6>
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="https://app.blk.finance/#/"
+                          className="gg"
+                        >
+                          <img src="\assets\give.png" class="img-fluid icon claim-icon" alt="" />
+                          <h6>Give</h6>
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="https://mint.blk.finance/"
+                          className="gg"
+                        >
+                          <img src="\assets\blackzip.png" class="img-fluid icon claim-icon" alt="" />
+                          <h6>Mint</h6>
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="https://app.blk.finance/#/"
+                          className="gg"
+                        >
+                          <img src="\assets\auction.png" class="img-fluid icon claim-icon" alt="" />
+                          <h6>Airdrop</h6>
+                        </a>
+                      </li>
+                      <Link to="/claim">
+                      <li>
+                        <a
+                          href=""
+                          className="gg"
+                        >
+                          <img src="\assets\claim.png" class="img-fluid icon claim-icon" alt="" />
+                          <h6>Claim</h6>
+                        </a>
+                      </li>
+                      </Link>
                       <li>
                         <a
                           href="http://www.blk.finance/"
@@ -90,12 +156,20 @@ function Nav() {
                       </li>
                       <li>
                         <a
-                          href=""
+                          href="https://discord.com/invite/N9JHyZjqK9"
                           className="gg"
-                          data-toggle="modal" data-target="#claim"
                         >
-                          <img src="\assets\claim.png" class="img-fluid icon claim-icon" alt="" />
-                          <h6>Claim</h6>
+                          <img src="\assets\forum.png" class="img-fluid icon claim-icon" alt="" />
+                          <h6>Forum</h6>
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="https://vote.blk.finance/#/theblackdao.eth"
+                          className="gg"
+                        >
+                          <img src="\assets\governance.png" class="img-fluid icon claim-icon" alt="" />
+                          <h6>Governance</h6>
                         </a>
                       </li>
                     </ul>
@@ -259,26 +333,6 @@ function Nav() {
                     alt="img"
                   />
                 </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section className="modal-claim">
-        <div
-          class="modal fade"
-          id="claim"
-          tabindex="-1"
-          aria-labelledby="exampleModalLabel"
-          aria-hidden="true"
-        >
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-body">
-                  <h5>You are eligible to claim the tokens</h5>
-                  <button className="claim">
-                  Claim Now
-                  </button>
               </div>
             </div>
           </div>
