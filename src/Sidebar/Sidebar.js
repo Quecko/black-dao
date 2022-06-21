@@ -158,7 +158,13 @@ function Sidebar() {
                           <h6>DOCS</h6>
                         </a>
                       </li>
+                      <li>
+                      <button class="btn button-connect-sidebar d-none" data-toggle="modal" data-target="#exampleModal" type="button">
+             Connect Wallet
+             </button>
+                      </li>
                     </ul>
+                    
                     <div className="sidebar-footer">
                       <div class="list-unstyled CTAs">
                         <a
