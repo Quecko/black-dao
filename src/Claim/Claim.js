@@ -5,7 +5,7 @@ import "./claim.scss";
 const Claim = () => {
   return (
     <>
-      <video id="myVideo" autoPlay loop>
+      <video id="myVideo" autoPlay muted play>
         <source src="\assets\BLK.mp4" type="video/mp4" />
         Your browser does not support HTML5 video.
       </video>
@@ -24,7 +24,7 @@ const Claim = () => {
             </div>
           </div>
         </div>
-        <div className="wallet-modal">
+        {/* <div className="wallet-modal">
           <div
             class="modal fade modal-dialog-centered"
             id="exampleModal"
@@ -77,7 +77,7 @@ const Claim = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
       </section>
     </>
   );
