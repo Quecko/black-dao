@@ -3,6 +3,7 @@ import StakePoolBNBForBNB from './StakePoolBNBForBNB.json'
 import StakePoolBNBForToken from './StakePoolBNBForToken.json'
 import StakePoolTokenForBNB from './StakePoolTokenForBNB.json'
 import StakePoolTokenForToken from './StakePoolTokenForToken.json'
+import Claim from './Claim.json'
 import approve from './approve.json'
 const getContract = (abi, address, web3) => {
   const _web3 = web3 ?? web3NoAccount;
@@ -39,4 +40,7 @@ export const TokenForBNB = (address, web3) => {
 }
 export const TokenForToken = (address, web3) => {
   return getContract(StakePoolTokenForToken, address, web3);
+}
+export const ClaimH = (address, web3) => {
+  return getContract(Claim, address, web3);
 }

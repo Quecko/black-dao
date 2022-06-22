@@ -3,10 +3,13 @@ import Sidebar from "../Sidebar/Sidebar";
 import "./claim.scss";
 import { useWeb3React } from "@web3-react/core";
 import useAuth from "../hooks/useAuth";
+import ClaimDao from "../hooks/dataSenders/claim";
+import { toast } from "react-toastify";
 
 const Claim = () => {
   const { account } = useWeb3React();
   const { login, logout } = useAuth();
+  const { claimTheDao } = ClaimDao();
   const connectMetamask = () => {
     localStorage.setItem("connectorId", "injected");
     if (account) {
@@ -15,7 +18,19 @@ const Claim = () => {
       login("injected");
     }
   };
+  const ClaimNow = async () => {
+    if (account) {
+      try {
+        const res = await claimTheDao();
+        toast.success('Claimed successfully');
+      } catch (error) {
+        toast.error(error.message.slice(22, 90));
+      }
+    } else {
+      toast.error('Please connect to Metamask');
+    }
 
+  }
   const close = () => {
     window.$("#exampleModal").modal("hide");
   };
@@ -39,16 +54,16 @@ const Claim = () => {
         Your browser does not support HTML5 video.
       </video>
       <section className="claim">
-      <button class="btn button-header" data-toggle="modal" data-target="#exampleModal" type="button">
-          {account?'Connected':' Connect Wallet'}  
-             </button>
+        <button class="btn button-header" data-toggle="modal" data-target="#exampleModal" type="button">
+          {account ? 'Connected' : ' Connect Wallet'}
+        </button>
         <div className="container-fluid p-0">
           <Sidebar />
           <div className="row m-0">
             <div className="col-xl-6 col-12 m-auto p-0">
               <div className="box">
                 <h5>You are eligible to claim the tokens</h5>
-                <button className="claim">Claim Now</button>
+                <button onClick={() => ClaimNow()} className="claim">Claim Now</button>
               </div>
             </div>
           </div>
@@ -85,10 +100,10 @@ const Claim = () => {
                   </div>
 
                   <div className="button-modal1 d-flex">
-                    <button  onClick={() => {
-                    connectMetamask();
-                    close();
-                  }} className="modal-button">
+                    <button onClick={() => {
+                      connectMetamask();
+                      close();
+                    }} className="modal-button">
                       <img
                         src="\assets\metamask-icon.svg"
                         className="img-fluid"
@@ -96,10 +111,10 @@ const Claim = () => {
                       <h3 className=""> MetaMask</h3>
                       <p className="">Connect to your MetaMask wallet </p>
                     </button>
-                    <button  onClick={() => {
-                    trustWallet();
-                    // close();
-                  }} className="modal-button">
+                    <button onClick={() => {
+                      trustWallet();
+                      // close();
+                    }} className="modal-button">
                       <img
                         src="\assets\walletconnect-icon.svg"
                         className="img-fluid"
