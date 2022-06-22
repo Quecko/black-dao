@@ -156,8 +156,24 @@
     right: -660px;
   }
   .button-header{
-    display: none !important;
+    // display: none !important;
   }
+  .claim .button-header {
+    position: absolute;
+    top: 74px;
+    right: 29%;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 135%;
+    color: #000000;
+    padding: 11px 30px;
+    background: #ffb805;
+    border-radius: 10px;
+    margin-bottom: 50px;
+    margin: 0 auto;
+    display: block;
+}
 }
 @media (max-width: 600px) {
   .claim .box {

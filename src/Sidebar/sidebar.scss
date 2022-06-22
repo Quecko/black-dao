@@ -80,7 +80,7 @@
   #sidebar {
     min-width: 100%;
     max-width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     background: #202226;
     color: #fff;
     transition: all 0.3s;
@@ -178,7 +178,7 @@
   }
 
   .CTAs {
-    padding: 20px;
+    // padding: 20px;
   }
 
   .CTAs a {
@@ -305,7 +305,9 @@
   margin: 20px 0;
 }
 .sidebar-footer{
-  
+  position: absolute;
+    bottom: 0px;
+    left: 0px;
   a{
     i{
       font-size: 24px;
@@ -477,7 +479,7 @@ aside.svelte-rntogh {
     background-color: #FCFCFC;
     padding: 2px 8px;
     border-radius: 120px;
-    margin-left: 85px;
+    margin-left: 17px;
     font-size: 12px;
     white-space: nowrap;
 }

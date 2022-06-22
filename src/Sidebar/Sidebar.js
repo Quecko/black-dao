@@ -38,7 +38,7 @@ function Sidebar() {
                   }
                 >
                   <nav id="sidebar">
-                    <div class="sidebar-header">
+                    <div class="sidebar-header position-relative">
                       <img
                         src="\assets\Frame 408.svg"
                         class="img-fluid"
@@ -159,9 +159,9 @@ function Sidebar() {
                         </a>
                       </li>
                       <li>
-                      <button class="btn button-connect-sidebar d-none" data-toggle="modal" data-target="#exampleModal" type="button">
+                      {/* <button class="btn button-connect-sidebar d-none" data-toggle="modal" data-target="#exampleModal" type="button">
              Connect Wallet
-             </button>
+             </button> */}
                       </li>
                     </ul>
                     
