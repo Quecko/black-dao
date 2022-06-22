@@ -82,15 +82,17 @@ function Sidebar() {
                           <h6 style={{textDecoration : "underline"}}>Give </h6> <span className="soon">Coming soon</span>
                         </a>
                       </li>
+                      <Link to="/">
                       <li>
                         <a
-                          href="https://mint.blk.finance/"
+                          href=""
                           className="gg"
                         >
                           <img src="\assets\icons-light\zap-light.svg" class="img-fluid icon claim-icon" alt="" />
                           <h6>Mint</h6>
                         </a>
                       </li>
+                      </Link>
                       <li>
                         <a
                           href="https://app.blk.finance/#/"
@@ -100,7 +102,7 @@ function Sidebar() {
                           <h6 style={{textDecoration : "underline"}}>Airdrop</h6><span className="soon">Coming soon</span>
                         </a>
                       </li>
-                      <Link to="/">
+                      <Link to="/claim">
                       <li>
                         <a
                           href=""

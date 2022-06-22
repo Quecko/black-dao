@@ -38,13 +38,12 @@ function Nav() {
                   }
                 >
                   <nav id="sidebar">
-                    <div class="sidebar-header">
+                    <div class="sidebar-header position-relative">
                       <img
                         src="\assets\Frame 408.svg"
                         class="img-fluid"
                         alt=""
                       />
-                      <p>0xEC70F2A...5AEE5</p>
                     </div>
                     <ul class="list-unstyled components">
                     <li>
@@ -52,7 +51,7 @@ function Nav() {
                           href="https://app.blk.finance/#/dashboard"
                           className="gg"
                         >
-                          <img src="\assets\dashboard.png" class="img-fluid icon claim-icon" alt="" />
+                          <img src="\assets\icons-light\dashboard-light.svg" class="img-fluid icon claim-icon" alt="" />
                           <h6>Dashboard</h6>
                         </a>
                       </li>
@@ -61,8 +60,8 @@ function Nav() {
                           href="https://app.blk.finance/#/bonds"
                           className="gg"
                         >
-                          <img src="\assets\bond.png" class="img-fluid icon claim-icon" alt="" />
-                          <h6>Bond</h6>
+                          <img src="\assets\icons-light\bond-light.svg" class="img-fluid icon claim-icon" alt="" />
+                          <h6 style={{textDecoration : "underline"}}>Bond</h6>
                         </a>
                       </li>
                       <li>
@@ -70,7 +69,7 @@ function Nav() {
                           href="https://app.blk.finance/#/stake"
                           className="gg"
                         >
-                          <img src="\assets\stake.png" class="img-fluid icon claim-icon" alt="" />
+                          <img src="\assets\icons-light\stake-light.svg" class="img-fluid icon claim-icon" alt="" />
                           <h6>Stake</h6>
                         </a>
                       </li>
@@ -79,26 +78,28 @@ function Nav() {
                           href="https://app.blk.finance/#/"
                           className="gg"
                         >
-                          <img src="\assets\give.png" class="img-fluid icon claim-icon" alt="" />
-                          <h6>Give</h6>
+                          <img src="\assets\icons-light\give-light.svg" class="img-fluid icon claim-icon" alt="" />
+                          <h6 style={{textDecoration : "underline"}}>Give </h6> <span className="soon">Coming soon</span>
                         </a>
                       </li>
+                      <Link to="/">
                       <li>
                         <a
-                          href="https://mint.blk.finance/"
+                          href=""
                           className="gg"
                         >
-                          <img src="\assets\blackzip.png" class="img-fluid icon claim-icon" alt="" />
+                          <img src="\assets\icons-light\zap-light.svg" class="img-fluid icon claim-icon" alt="" />
                           <h6>Mint</h6>
                         </a>
                       </li>
+                      </Link>
                       <li>
                         <a
                           href="https://app.blk.finance/#/"
                           className="gg"
                         >
-                          <img src="\assets\auction.png" class="img-fluid icon claim-icon" alt="" />
-                          <h6>Airdrop</h6>
+                          <img src="\assets\icons-light\wrap-light.svg" class="img-fluid icon claim-icon" alt="" />
+                          <h6 style={{textDecoration : "underline"}}>Airdrop</h6><span className="soon">Coming soon</span>
                         </a>
                       </li>
                       <Link to="/claim">
@@ -112,21 +113,8 @@ function Nav() {
                         </a>
                       </li>
                       </Link>
-                      <li>
-                        <a
-                          href="http://www.blk.finance/"
-                          target="_blank"
-                          className="gg"
-                        >
-                          <img
-                            src="\assets\vuesax\bold\vuesax\bold\home-2.svg"
-                            class="img-fluid icon"
-                            alt=""
-                          />
-                          <h6>Home</h6>
-                        </a>
-                      </li>
-                      <li>
+                      <hr style={{backgroundColor : "rgba(255, 255, 255, 0.12)"}}/>
+                      {/* <li>
                         <a
                           href="https://tell.ie/theblackdao/lYZQQAX3KwSM"
                           target="_blank"
@@ -139,27 +127,13 @@ function Nav() {
                           />
                           <h6>About</h6>
                         </a>
-                      </li>
-                      <li>
-                        <a
-                          href="http://docs.blk.finance/"
-                          target="_blank"
-                          className="gg"
-                        >
-                          <img
-                            src="\assets\vuesax\bold\vuesax\bold\document-text.svg"
-                            class="img-fluid icon"
-                            alt=""
-                          />
-                          <h6>DOCS</h6>
-                        </a>
-                      </li>
+                      </li> */}
                       <li>
                         <a
                           href="https://discord.com/invite/N9JHyZjqK9"
                           className="gg"
                         >
-                          <img src="\assets\forum.png" class="img-fluid icon claim-icon" alt="" />
+                          <img src="\assets\icons-light\forum-light.svg" class="img-fluid icon claim-icon" alt="" />
                           <h6>Forum</h6>
                         </a>
                       </li>
@@ -168,52 +142,56 @@ function Nav() {
                           href="https://vote.blk.finance/#/theblackdao.eth"
                           className="gg"
                         >
-                          <img src="\assets\governance.png" class="img-fluid icon claim-icon" alt="" />
+                          <img src="\assets\icons-light\governance-light.svg" class="img-fluid icon claim-icon" alt="" />
                           <h6>Governance</h6>
                         </a>
                       </li>
+                      <li>
+                        <a
+                          href="http://docs.blk.finance/"
+                          target="_blank"
+                          className="gg"
+                        >
+                          <img
+                            src="\assets\icons-light\docs-light.svg"
+                            class="img-fluid icon"
+                            alt=""
+                          />
+                          <h6>DOCS</h6>
+                        </a>
+                      </li>
+                      <li>
+                      {/* <button class="btn button-connect-sidebar d-none" data-toggle="modal" data-target="#exampleModal" type="button">
+             Connect Wallet
+             </button> */}
+                      </li>
                     </ul>
+                    
                     <div className="sidebar-footer">
                       <div class="list-unstyled CTAs">
                         <a
                           href="https://discord.com/invite/N9JHyZjqK9"
                           target="_blank"
                         >
-                          <img
-                            src="\assets\Vector.svg"
-                            class="img-fluid links1"
-                            alt=""
-                          />
+                          <i class="fab fa-github"></i>
                         </a>
                         <a
                           href="https://twitter.com/theblackdao"
                           target="_blank"
                         >
-                          <img
-                            src="\assets\Vector (1).svg"
-                            class="img-fluid links1"
-                            alt=""
-                          />
+                         <i class="fab fa-medium"></i>
                         </a>
                         <a
                           href="https://mirror.xyz/theblackdao.eth"
                           target="_blank"
                         >
-                          <img
-                            src="\assets\Shape.svg"
-                            class="img-fluid links1"
-                            alt=""
-                          />
+                          <i class="fab fa-twitter"></i>
                         </a>
                         <a
                           href="https://github.com/The-Black-DAO"
                           target="_blank"
                         >
-                          <img
-                            src="\assets\Cat.svg"
-                            class="img-fluid links1"
-                            alt=""
-                          />
+                         <i class="fab fa-discord"></i>
                         </a>
                       </div>
                     </div>
