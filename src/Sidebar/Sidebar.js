@@ -100,7 +100,7 @@ function Sidebar() {
                           <h6 style={{textDecoration : "underline"}}>Airdrop</h6><span className="soon">Coming soon</span>
                         </a>
                       </li>
-                      <Link to="/claim">
+                      <Link to="/">
                       <li>
                         <a
                           href=""
