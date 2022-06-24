@@ -40,7 +40,7 @@ function Sidebar() {
                   <nav id="sidebar">
                     <div class="sidebar-header position-relative">
                       <img
-                        src="\assets\Frame 408.svg"
+                        src="\assets\newlogo.png"
                         class="img-fluid"
                         alt=""
                       />
@@ -55,7 +55,7 @@ function Sidebar() {
                           <h6>Dashboard</h6>
                         </a>
                       </li>
-                      <li>
+                      {/* <li>
                         <a
                           href="https://app.blk.finance/#/bonds"
                           className="gg"
@@ -63,8 +63,8 @@ function Sidebar() {
                           <img src="\assets\icons-light\bond-light.svg" class="img-fluid icon claim-icon" alt="" />
                           <h6 style={{textDecoration : "underline"}}>Bond</h6>
                         </a>
-                      </li>
-                      <li>
+                      </li> */}
+                      {/* <li>
                         <a
                           href="https://app.blk.finance/#/stake"
                           className="gg"
@@ -72,8 +72,8 @@ function Sidebar() {
                           <img src="\assets\icons-light\stake-light.svg" class="img-fluid icon claim-icon" alt="" />
                           <h6>Stake</h6>
                         </a>
-                      </li>
-                      <li>
+                      </li> */}
+                      {/* <li>
                         <a
                           href="https://app.blk.finance/#/"
                           className="gg"
@@ -81,19 +81,8 @@ function Sidebar() {
                           <img src="\assets\icons-light\give-light.svg" class="img-fluid icon claim-icon" alt="" />
                           <h6 style={{textDecoration : "underline"}}>Give </h6> <span className="soon">Coming soon</span>
                         </a>
-                      </li>
-                      <Link to="/">
-                      <li>
-                        <a
-                          href=""
-                          className="gg"
-                        >
-                          <img src="\assets\icons-light\zap-light.svg" class="img-fluid icon claim-icon" alt="" />
-                          <h6>Mint</h6>
-                        </a>
-                      </li>
-                      </Link>
-                      <li>
+                      </li> */}
+                      {/* <li>
                         <a
                           href="https://app.blk.finance/#/"
                           className="gg"
@@ -101,7 +90,7 @@ function Sidebar() {
                           <img src="\assets\icons-light\wrap-light.svg" class="img-fluid icon claim-icon" alt="" />
                           <h6 style={{textDecoration : "underline"}}>Airdrop</h6><span className="soon">Coming soon</span>
                         </a>
-                      </li>
+                      </li> */}
                       <Link to="/claim">
                       <li>
                         <a
@@ -110,6 +99,17 @@ function Sidebar() {
                         >
                           <img src="\assets\claim.png" class="img-fluid icon claim-icon" alt="" />
                           <h6>Claim</h6>
+                        </a>
+                      </li>
+                      </Link>
+                      <Link to="/">
+                      <li>
+                        <a
+                          href=""
+                          className="gg"
+                        >
+                          <img src="\assets\icons-light\zap-light.svg" class="img-fluid icon claim-icon" alt="" />
+                          <h6>Mint</h6>
                         </a>
                       </li>
                       </Link>
@@ -157,7 +157,7 @@ function Sidebar() {
                             class="img-fluid icon"
                             alt=""
                           />
-                          <h6>DOCS</h6>
+                          <h6>Docs</h6>
                         </a>
                       </li>
                       <li>
