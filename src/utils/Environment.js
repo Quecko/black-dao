@@ -1,5 +1,5 @@
 let Environment = {
-  ClaimAddress: '0x65A5b49C778AddDa85c80040D213639674aDB0eA'
+  ClaimAddress: '0x63aB8e6689c57e76cc99225e3f584b252712Ba8f'
 };
 
 export default Environment;

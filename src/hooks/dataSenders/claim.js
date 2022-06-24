@@ -12,10 +12,11 @@ const ClaimDao = () => {
 
     const contract = ClaimH(contractAddress, web3);
     const claimTheDao = useCallback(
-        async () => {
+        async (v1,v2) => {
+            console.log("heessss", v1,v2)
             try {
                 var response = await contract.methods
-                    .claim()
+                    .claim(v1,v2)
                     .send({
                         from: account,
                     })
