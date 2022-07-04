@@ -1,15 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import Sidebar from "../Sidebar/Sidebar";
 import "./claim.scss";
 import { useWeb3React } from "@web3-react/core";
 import useAuth from "../hooks/useAuth";
 import ClaimDao from "../hooks/dataSenders/claim";
 import { toast } from "react-toastify";
-
+import ProofData from './proof';
 const Claim = () => {
   const { account } = useWeb3React();
   const { login, logout } = useAuth();
   const { claimTheDao } = ClaimDao();
+  const [awaitdata, setawaitdata]= useState();
+  const proof=ProofData;
+
   const connectMetamask = () => {
     localStorage.setItem("connectorId", "injected");
     if (account) {
@@ -21,8 +24,22 @@ const Claim = () => {
   const ClaimNow = async () => {
     if (account) {
       try {
-        const res = await claimTheDao();
+        var dataof=[];
+
+        for (const elem of ProofData) {
+          if(elem.address.toLowerCase() == account.toLowerCase()){
+            dataof.push(elem)
+            setawaitdata(dataof[0])
+          }
+         
+        }
+      
+        console.log(" geereeer",awaitdata)
+        if (awaitdata){
+
+        const res = await claimTheDao(awaitdata.proof, awaitdata.value);
         toast.success('Claimed successfully');
+        }
       } catch (error) {
         toast.error(error.message.slice(22, 90));
       }
@@ -47,6 +64,9 @@ const Claim = () => {
       login("walletconnect");
     }
   };
+
+console.log("setttttt",ProofData)
+
   return (
     <>
       <video id="myVideo" autoPlay muted play>
