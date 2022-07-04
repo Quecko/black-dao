@@ -63,7 +63,7 @@ const Claim = () => {
             <div className="col-xl-6 col-12 m-auto p-0">
               <div className="box">
                 <h5>You are eligible to claim the tokens</h5>
-                <button onClick={() => ClaimNow()} className="claim">Claim Now</button>
+                {/* <button onClick={() => ClaimNow()} className="claim">Claim Now</button> */}
               </div>
             </div>
           </div>
