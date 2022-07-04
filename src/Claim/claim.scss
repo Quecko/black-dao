@@ -1,187 +1,187 @@
-.claim {
-  .box {
-    background: #202226 !important;
-    border: 1px solid #493b17;
-    border-radius: 15px;
-    width: 100%;
-    margin: 0 auto;
-    margin-left: 137px;
-    margin-top: 153px;
-    h5 {
-      font-style: normal;
-      font-weight: 500;
-      font-size: 24px;
-      line-height: 28px;
-      text-align: center;
-      color: #ffffff !important;
-      margin: 50px 0;
-    }
-    .claim {
-      font-style: normal;
-      font-weight: 500;
-      font-size: 18px;
-      line-height: 135%;
-      color: #000000;
-      padding: 15px 65px;
-      background: #ffb805;
-      border-radius: 10px;
-      margin-bottom: 50px;
-      margin: 0 auto;
-      display: block;
-      margin-bottom: 40px;
-    }
-  }
-  .button-header{
-    position: absolute;
-    top: 15px;
-    right: 25px;
-    font-style: normal;
-      font-weight: 500;
-      font-size: 18px;
-      line-height: 135%;
-      color: #000000;
-      padding: 15px 65px;
-      background: #ffb805;
-      border-radius: 10px;
-      margin-bottom: 50px;
-      margin: 0 auto;
-      display: block;
-  }
-  .wallet-modal {
-    .modal-content {
-      width: 746px;
-      height: 343px;
-      background: #ffffff;
-      border: 1px solid #f1f1f1;
-      box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.05);
-      border-radius: 5px;
-    }
+// .claim {
+//   .box {
+//     background: #202226 !important;
+//     border: 1px solid #493b17;
+//     border-radius: 15px;
+//     width: 100%;
+//     margin: 0 auto;
+//     margin-left: 137px;
+//     margin-top: 153px;
+//     h5 {
+//       font-style: normal;
+//       font-weight: 500;
+//       font-size: 24px;
+//       line-height: 28px;
+//       text-align: center;
+//       color: #ffffff !important;
+//       margin: 50px 0;
+//     }
+//     .claim {
+//       font-style: normal;
+//       font-weight: 500;
+//       font-size: 18px;
+//       line-height: 135%;
+//       color: #000000;
+//       padding: 15px 65px;
+//       background: #ffb805;
+//       border-radius: 10px;
+//       margin-bottom: 50px;
+//       margin: 0 auto;
+//       display: block;
+//       margin-bottom: 40px;
+//     }
+//   }
+//   .button-header{
+//     position: absolute;
+//     top: 15px;
+//     right: 25px;
+//     font-style: normal;
+//       font-weight: 500;
+//       font-size: 18px;
+//       line-height: 135%;
+//       color: #000000;
+//       padding: 15px 65px;
+//       background: #ffb805;
+//       border-radius: 10px;
+//       margin-bottom: 50px;
+//       margin: 0 auto;
+//       display: block;
+//   }
+//   .wallet-modal {
+//     .modal-content {
+//       width: 746px;
+//       height: 343px;
+//       background: #ffffff;
+//       border: 1px solid #f1f1f1;
+//       box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.05);
+//       border-radius: 5px;
+//     }
 
-    .modal-body {
-      .cross-img1 {
-        position: absolute;
-        top: 0px;
-        left: 679px;
-      }
+//     .modal-body {
+//       .cross-img1 {
+//         position: absolute;
+//         top: 0px;
+//         left: 679px;
+//       }
 
-      h3 {
-        font-style: normal;
-        font-weight: 600;
-        font-size: 22px;
-        margin-bottom: 29px;
-        margin-top: 29px;
+//       h3 {
+//         font-style: normal;
+//         font-weight: 600;
+//         font-size: 22px;
+//         margin-bottom: 29px;
+//         margin-top: 29px;
 
-        text-align: center;
-        text-transform: uppercase;
+//         text-align: center;
+//         text-transform: uppercase;
 
-        color: #121212;
-      }
-    }
+//         color: #121212;
+//       }
+//     }
 
-    .button-modal1 {
-      .modal-button {
-        width: 373px;
-        height: 182px;
+//     .button-modal1 {
+//       .modal-button {
+//         width: 373px;
+//         height: 182px;
 
-        background: #ffffff;
-        border-width: 1px 1px 1px 0px;
-        border: 1px solid #e7e7e7;
-        &:hover {
-          background-color: #fff8fb;
-        }
+//         background: #ffffff;
+//         border-width: 1px 1px 1px 0px;
+//         border: 1px solid #e7e7e7;
+//         &:hover {
+//           background-color: #fff8fb;
+//         }
 
-        h3 {
-          font-style: normal;
-          font-weight: 500;
-          font-size: 18px;
+//         h3 {
+//           font-style: normal;
+//           font-weight: 500;
+//           font-size: 18px;
 
-          margin: 0px;
-          text-align: center;
-          margin-top: 10px;
-          margin-bottom: 8px;
+//           margin: 0px;
+//           text-align: center;
+//           margin-top: 10px;
+//           margin-bottom: 8px;
 
-          color: #000000;
-        }
-        p {
-          font-weight: 500;
-          font-size: 14px;
-          margin-bottom: 32px;
+//           color: #000000;
+//         }
+//         p {
+//           font-weight: 500;
+//           font-size: 14px;
+//           margin-bottom: 32px;
 
-          text-align: center;
+//           text-align: center;
 
-          color: #acacac;
-        }
-      }
-    }
-    .text-center {
-      font-weight: 500;
-      font-size: 14px;
+//           color: #acacac;
+//         }
+//       }
+//     }
+//     .text-center {
+//       font-weight: 500;
+//       font-size: 14px;
 
-      text-align: center;
+//       text-align: center;
 
-      color: #acacac;
-      span {
-        font-weight: 500;
-        font-size: 14px;
+//       color: #acacac;
+//       span {
+//         font-weight: 500;
+//         font-size: 14px;
 
-        text-align: center;
+//         text-align: center;
 
-        color: #ff0083;
-      }
-    }
-  }
-}
-#myVideo {
-  position: fixed;
-  right: -520px;
-  bottom: -100px;
-  min-width: 100%;
-  min-height: 100%;
-}
+//         color: #ff0083;
+//       }
+//     }
+//   }
+// }
+// #myVideo {
+//   position: fixed;
+//   right: -520px;
+//   bottom: -100px;
+//   min-width: 100%;
+//   min-height: 100%;
+// }
 
-@media (max-width: 1199px) {
-  .claim .box {
-    width: 600px;
-    margin-left: 313px;
-  }
-}
+// @media (max-width: 1199px) {
+//   .claim .box {
+//     width: 600px;
+//     margin-left: 313px;
+//   }
+// }
 
-@media (max-width: 991px) {
-  .claim .box {
-    width: 80%;
-    margin: 0 auto;
-    margin-top: 200px;
-  }
-  #myVideo {
-    right: -660px;
-  }
-  .button-header{
-    // display: none !important;
-  }
-  .claim .button-header {
-    position: absolute;
-    top: 74px;
-    right: 29%;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 135%;
-    color: #000000;
-    padding: 11px 30px;
-    background: #ffb805;
-    border-radius: 10px;
-    margin-bottom: 50px;
-    margin: 0 auto;
-    display: block;
-}
-}
-@media (max-width: 600px) {
-  .claim .box {
-    width: 95%;
-    margin: 0 auto;
-    margin-top: 200px;
-  }
-  #myVideo {
-    right: -850px;
-  }
-}
+// @media (max-width: 991px) {
+//   .claim .box {
+//     width: 80%;
+//     margin: 0 auto;
+//     margin-top: 200px;
+//   }
+//   #myVideo {
+//     right: -660px;
+//   }
+//   .button-header{
+//     // display: none !important;
+//   }
+//   .claim .button-header {
+//     position: absolute;
+//     top: 74px;
+//     right: 29%;
+//     font-style: normal;
+//     font-weight: 500;
+//     font-size: 18px;
+//     line-height: 135%;
+//     color: #000000;
+//     padding: 11px 30px;
+//     background: #ffb805;
+//     border-radius: 10px;
+//     margin-bottom: 50px;
+//     margin: 0 auto;
+//     display: block;
+// }
+// }
+// @media (max-width: 600px) {
+//   .claim .box {
+//     width: 95%;
+//     margin: 0 auto;
+//     margin-top: 200px;
+//   }
+//   #myVideo {
+//     right: -850px;
+//   }
+// }

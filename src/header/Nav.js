@@ -82,7 +82,7 @@ function Nav() {
                           <h6 style={{textDecoration : "underline"}}>Give </h6> <span className="soon">Coming soon</span>
                         </a>
                       </li> */}
-                       <Link to="/claim">
+                       {/* <Link to="/claim">
                       <li>
                         <a
                           href=""
@@ -92,7 +92,7 @@ function Nav() {
                           <h6>Claim</h6>
                         </a>
                       </li>
-                      </Link>
+                      </Link> */}
                       <Link to="/">
                       <li>
                         <a
